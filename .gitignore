@@ -1,0 +1,32 @@
+# Terraform state & local cache – state can contain secrets, never commit
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+crash.*.log
+*.tfplan
+tfplan
+
+# Variable files with real values (commit *.tfvars.example instead)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local AI assistant instructions (personal context, not part of the project)
+CLAUDE.md
