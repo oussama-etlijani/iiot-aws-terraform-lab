@@ -1,5 +1,5 @@
 variable "budget_alert_email" {
-  description = "Eamil adress to send AWS budget alerts"
+  description = "Email address that receives AWS Budgets alerts"
   type        = string
   sensitive   = true
 }

@@ -1,8 +1,3 @@
-import {
-  to = aws_budgets_budget.monthly
-  id = "${data.aws_caller_identity.current.account_id}:iiot-lab-monthly"
-}
-
 resource "aws_budgets_budget" "monthly" {
   name         = "iiot-lab-monthly"
   budget_type  = "COST"
